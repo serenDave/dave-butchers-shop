@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Odibee+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Squada+One&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+        <link rel="stylesheet" href="dist/css/main.min.css" />
+        <link rel="shortcut icon" type="image/png" href="dist/img/favicon.png" />
+        <title>Big Dave Butchers Shop</title>
+    </head>
+    <body class="container">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <img src="dist/img/logo.png" alt="logo" class="nav__logo" />
+                    </li>
+                    <li class="nav__item nav__home">
+                        <a href="#" class="nav__home-link">Big Dave Butcher's Shop</a>
+                    </li>
+                    <li class="nav__item nav__large">
+                        <a href="#" class="nav__link js--scroll-to-garage">Garage</a>
+                    </li>
+                    <li class="nav__item nav__large">
+                        <a href="#" class="nav__link js--scroll-to-restaurant">Restaurant</a>
+                    </li>
+                    <li class="nav__item nav__large"><a href="#" class="nav__link">Contacts</a></li>
+                    <li class="nav__item nav__large">
+                        <a href="#" class="nav__link js--scroll-to-history">About us</a>
+                    </li>
+                    <li class="nav__item" id="mobile-nav" onclick="openNav()">
+                        <svg class="nav__menu-icon">
+                            <use xlink:href="svg/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </li>
+                </ul>
+
+                <div id="sidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Garage</a>
+                    <a href="#">Restaurant</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">About us</a>
+                </div>
+            </nav>
+
+            <div class="header__hero">
+                <h1 class="heading-1 animate__animated animate__fadeInLeft">Garage and Restaurant</h1>
+                <p class="header__text animate__animated animate__fadeIn animate__delay-2s">
+                    All you need in one place
+                </p>
+                <a
+                    href="#"
+                    class="btn btn--red btn--centered animate__animated animate__fadeIn animate__delay-2s js--scroll-to-about"
+                >
+                    Get to know more
+                </a>
+            </div>
+        </header>
+
+        <section class="about__info js--section-about">
+            <h2 class="heading-2 mb-sm">Who are we?</h2>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </section>
+        <section class="about__propositions">
+            <div class="proposition">
+                <div class="proposition__name proposition__name--red">
+                    <h3 class="heading-3">Motorcycle garage</h3>
+                </div>
+                <img src="dist/img/garage-hero.jpg" alt="Motorcycle" class="proposition__img" />
+                <a href="#" class="proposition__btn btn btn--red js--scroll-to-garage">More info</a>
+            </div>
+
+            <div class="proposition">
+                <div class="proposition__name proposition__name--red">
+                    <h3 class="heading-3">Barbeque restaurant</h3>
+                </div>
+                <img src="dist/img/restaurant-hero.jpg" alt="Motorcycle" class="proposition__img" />
+                <a href="#" class="proposition__btn btn btn--red js--scroll-to-restaurant">More info</a>
+            </div>
+        </section>
+
+        <section class="garage-info js--section-garage">
+            <h2 class="heading-2 heading-2--red mb-md">Motorcycle garage</h2>
+            <div class="garage-info__text">
+                <p class="paragraph">
+                    Augue interdum velit euismod in pellentesque. Erat pellentesque adipiscing commodo elit at
+                    imperdiet dui accumsan. At risus viverra adipiscing at in tellus integer. Porttitor massa
+                    id neque aliquam vestibulum morbi. Phasellus faucibus scelerisque eleifend donec pretium.
+                    Aliquam faucibus purus in massa.
+                </p>
+            </div>
+            <div class="garage-info__services">
+                <div class="garage-info__service">
+                    <svg class="garage-info__service-icon">
+                        <use xlink:href="svg/sprite.svg#icon-tools"></use>
+                    </svg>
+                    <div class="garage-info__service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur
+                        lorem.
+                    </div>
+                </div>
+
+                <div class="garage-info__service">
+                    <svg class="garage-info__service-icon">
+                        <use xlink:href="svg/sprite.svg#icon-paint"></use>
+                    </svg>
+                    <div class="garage-info__service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur
+                        lorem.
+                    </div>
+                </div>
+
+                <div class="garage-info__service">
+                    <svg class="garage-info__service-icon">
+                        <use xlink:href="svg/sprite.svg#icon-drop"></use>
+                    </svg>
+                    <div class="garage-info__service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur
+                        lorem.
+                    </div>
+                </div>
+
+                <div class="garage-info__service">
+                    <svg class="garage-info__service-icon">
+                        <use xlink:href="svg/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <div class="garage-info__service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur
+                        lorem.
+                    </div>
+                </div>
+            </div>
+
+            <div class="garage-info__button">
+                <a href="#" class="btn btn--red btn--centered">More info</a>
+            </div>
+        </section>
+        <div class="garage-info__background"></div>
+
+        <section class="garage-reviews">
+            <h2 class="heading-2 mb-md">What our customers say</h2>
+
+            <div class="garage-reviews__reviews">
+                <figure class="garage-reviews__review">
+                    <blockquote class="garage-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </blockquote>
+                    <figcaption class="garage-reviews__author">
+                        <img src="dist/img/user-1.jpg" alt="#" class="garage-reviews__photo" />
+                        <div class="garage-reviews__user-box">
+                            <p class="garage-reviews__name">Claus Brown</p>
+                            <p class="garage-reviews__bio">Motobiker, member of "Rusty Wolves"</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="garage-reviews__review">
+                    <blockquote class="garage-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </blockquote>
+                    <figcaption class="garage-reviews__author">
+                        <img src="dist/img/user-2.jpg" alt="#" class="garage-reviews__photo" />
+                        <div class="garage-reviews__user-box">
+                            <p class="garage-reviews__name">Rebecca Miles</p>
+                            <p class="garage-reviews__bio">Designer and motorcycles hobbyist</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="garage-reviews__review">
+                    <blockquote class="garage-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </blockquote>
+                    <figcaption class="garage-reviews__author">
+                        <img src="dist/img/user-3.jpg" alt="#" class="garage-reviews__photo" />
+                        <div class="garage-reviews__user-box">
+                            <p class="garage-reviews__name">David Lander</p>
+                            <p class="garage-reviews__bio">Driver and bikes enthusiast</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="garage-reviews__review">
+                    <blockquote class="garage-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </blockquote>
+                    <figcaption class="garage-reviews__author">
+                        <img src="dist/img/user-4.jpg" alt="#" class="garage-reviews__photo" />
+                        <div class="garage-reviews__user-box">
+                            <p class="garage-reviews__name">Tim Bertram</p>
+                            <p class="garage-reviews__bio">Repairman in the "West cars" shop</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="garage-reviews__button">
+                <a href="#" class="btn btn--red btn--black-text-hover btn--centered">Read more reviews</a>
+            </div>
+        </section>
+
+        <section class="restaurant-info js--section-restaurant">
+            <div class="restaurant-info__info-box">
+                <h2 class="heading-2 heading-2--yellow mb-md">
+                    Our barbeque restaurant
+                </h2>
+
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+
+            <div class="restaurant-info__dishes">
+                <figure class="item">
+                    <h3 class="item__title item__title--yellow">
+                        Main barbeque menu
+                    </h3>
+
+                    <div class="item__content">
+                        <img src="dist/img/dish-1.jpg" alt="Dish 1" class="item__img" />
+                        <!-- <div class="item__description">
+                            Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. 
+                            Sit amet cursus sit amet dictum sit amet. Eget felis eget nunc lobortis 
+                            mattis aliquam. Adipiscing elit pellentesque habitant morbi tristique.
+                        </div> -->
+                    </div>
+                </figure>
+
+                <figure class="item">
+                    <h3 class="item__title item__title--yellow">Big Dave's Meat Specials</h3>
+                    <div class="item__content">
+                        <img src="dist/img/dish-2.jpg" alt="Dish 2" class="item__img" />
+                    </div>
+                </figure>
+
+                <figure class="item">
+                    <h3 class="item__title item__title--yellow">Meat sticks in sauce</h3>
+
+                    <div class="item__content">
+                        <img src="dist/img/dish-3.jpg" alt="Dish 3" class="item__img" />
+                    </div>
+                </figure>
+
+                <figure class="item">
+                    <h3 class="item__title item__title--yellow">Texas pizza</h3>
+                    <div class="item__content">
+                        <img src="dist/img/dish-4.jpg" alt="Dish 4" class="item__img" />
+                    </div>
+                </figure>
+
+                <figure class="item">
+                    <h3 class="item__title item__title--yellow">Bid Dave's Big Burger</h3>
+                    <div class="item__content">
+                        <img src="dist/img/dish-5.jpg" alt="Dish 5" class="item__img" />
+                    </div>
+                </figure>
+
+                <figure class="item">
+                    <h3 class="item__title item__title--yellow">Juicy steak with vegetables</h3>
+                    <div class="item__content">
+                        <img src="dist/img/dish-6.jpg" alt="Dish 6" class="item__img" />
+                    </div>
+                </figure>
+            </div>
+
+            <div class="restaurant-info__button">
+                <a href="#" class="btn btn--yellow btn--black-text btn--centered">More info</a>
+            </div>
+        </section>
+        <div class="restaurant-info__background"></div>
+
+        <section class="restaurant-reviews">
+            <h2 class="heading-2 heading-2--yellow mb-bg">Restaurant Reviews</h2>
+
+            <figure class="restaurant-reviews__review">
+                <img src="dist/img/user-5.jpg" alt="Restaurant user 1" class="restaurant-reviews__photo" />
+                <blockquote class="restaurant-reviews__user-box">
+                    <figcaption class="restaurant-reviews__user-name">Brad Johnson</figcaption>
+                    <div class="restaurant-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Luis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore.
+                    </div>
+                </blockquote>
+            </figure>
+
+            <figure class="restaurant-reviews__review">
+                <img src="dist/img/user-6.jpg" alt="Restaurant user 1" class="restaurant-reviews__photo" />
+                <blockquote class="restaurant-reviews__user-box">
+                    <figcaption class="restaurant-reviews__user-name">Kathrine Fisher</figcaption>
+                    <div class="restaurant-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Luis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore.
+                    </div>
+                </blockquote>
+            </figure>
+
+            <figure class="restaurant-reviews__review">
+                <img src="dist/img/user-7.jpg" alt="Restaurant user 1" class="restaurant-reviews__photo" />
+                <blockquote class="restaurant-reviews__user-box">
+                    <figcaption class="restaurant-reviews__user-name">Tom Adams</figcaption>
+                    <div class="restaurant-reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Luis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore.
+                    </div>
+                </blockquote>
+            </figure>
+
+            <a href="#" class="btn btn--yellow btn--centered btn--black-text btn--white-text-hover"
+                >Read more reviews</a
+            >
+        </section>
+        <div class="restaurant-reviews__background"></div>
+
+        <section class="our-history js--section-history">
+            <h2 class="heading-2 heading-2--yellow mb-md">A little bit of our history...</h2>
+
+            <div class="our-history__fragments">
+                <fugure class="our-history__fragment">
+                    <img src="dist/img/history-1.jpg" alt="History fragment 1" class="our-history__img" />
+                    <h4 class="heading-4 heading-4--yellow mb-sm">First ideas</h4>
+                    <p class="our-history__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis
+                        tristique sollicitudin nibh sit. Enim lobortis scelerisque fermentum dui. Orci a
+                        scelerisque purus semper eget duis at tellus.
+                    </p>
+                </fugure>
+
+                <fugure class="our-history__fragment">
+                    <img src="dist/img/history-2.jpg" alt="History fragment 2" class="our-history__img" />
+                    <h4 class="heading-4 heading-4--yellow mb-sm">Building a garage</h4>
+                    <p class="our-history__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis
+                        tristique sollicitudin nibh sit. Enim lobortis scelerisque fermentum dui. Orci a
+                        scelerisque purus semper eget duis at tellus.
+                    </p>
+                </fugure>
+
+                <fugure class="our-history__fragment">
+                    <img src="dist/img/history-3.jpg" alt="History fragment 3" class="our-history__img" />
+                    <h4 class="heading-4 heading-4--yellow mb-sm">Barbeque shop</h4>
+                    <p class="our-history__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis
+                        tristique sollicitudin nibh sit. Enim lobortis scelerisque fermentum dui. Orci a
+                        scelerisque purus semper eget duis at tellus.
+                    </p>
+                </fugure>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="dist/img/logo.png" alt="Footer logo" class="footer__logo" />
+                <h3 class="footer__logo-name">Big Dave Butchers Shop</h3>
+            </div>
+            <div class="footer__info-box">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Blog</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Motorcycle garage</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Barbeque resaurant</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contacts</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">About us</a>
+                    </li>
+                </ul>
+                <ul class="footer__medias-list">
+                    <li class="footer__media-item">
+                        <a href="#" class="footer__media-link">
+                            <svg class="footer__facebook-logo">
+                                <use xlink:href="svg/sprite.svg#icon-facebook2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__media-item">
+                        <a href="#" class="footer__media-link">
+                            <svg class="footer__instagram-logo">
+                                <use xlink:href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__media-item">
+                        <a href="#" class="footer__media-link">
+                            <svg class="footer__twitter-logo">
+                                <use xlink:href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__media-item">
+                        <a href="#" class="footer__media-link">
+                            <svg class="footer__youtube-logo">
+                                <use xlink:href="svg/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="copyright">
+                &copy; Copyright by "Big Dave Butcher's Shop" company. All rights reserved.
+            </p>
+        </footer>
+        <div class="footer__background"></div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="dist/js/jquery.waypoints.min.js"></script>
+    <script src="dist/js/script.js"></script>
+</html>

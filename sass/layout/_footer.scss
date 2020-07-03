@@ -1,0 +1,144 @@
+.footer {
+    grid-row: 11 / 12;
+    grid-column: center-start / center-end;
+    padding: 6rem 0;
+    color: $color-grey-light-3;
+    font-family: $color-primary;
+    text-align: center;
+    z-index: 10;
+
+    @media(max-width: 800px) {
+        padding: 6rem 2rem;
+    }
+
+    &__logo-box {
+        display: flex;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    &__logo {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 2.5rem;
+    }
+
+    &__logo-name {
+        font-size: 4rem;
+        font-family: $font-display;
+        font-weight: 700;
+    }
+
+    &__info-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 9rem;
+
+        @media(max-width: 800px) {
+           flex-direction: column;
+           align-items: flex-start;
+        }
+    }
+
+    &__nav-list,
+    &__medias-list {
+        width: max-content;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-list {
+        padding-top: 1rem;
+        border-top: 1px solid $color-grey-light-3;
+
+        @media(max-width: 800px) {
+            margin-bottom: 5rem;
+        }
+
+        @media(max-width: 500px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__nav-link,
+    &__media-link {
+        text-decoration: none;
+    }
+
+    &__nav-item {
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.1) skewX(10deg);
+            box-shadow: 0 3px 3px 4px rgba(0, 0, 0, 0.3);
+            background-color: $color-secondary-dark;
+        }
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__nav-link {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: inherit;
+    }
+
+    &__media-item:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &__media-link svg {
+        width: 3rem;
+        height: 3rem;
+        fill: $color-grey-light-3;
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__facebook-logo {
+        &:hover {
+            fill: #39569c;
+        }
+    }
+
+    &__instagram-logo {
+        &:hover {
+            fill: #991371;
+        }
+    }
+
+    &__twitter-logo {
+        &:hover {
+            fill: #00acee;
+        }
+    }
+
+    &__youtube-logo {
+        &:hover {
+            fill: #b2071d;
+        }
+    }
+
+    &__copyright {
+        width: max-content;
+        font-size: 1.4rem;
+        color: $color-grey-dark-2;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__background {
+        grid-row: 11 / 12;
+        grid-column: full-start / full-end;
+        background-color: $color-secondary-dark;
+        z-index: -1;
+    }
+}

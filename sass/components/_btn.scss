@@ -1,0 +1,61 @@
+.btn {
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    color: $color-grey-light-1;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1.5rem 3.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    @include clipPathSlight;
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.04);
+    }
+
+    &--centered {
+        margin: 0 auto;
+    }
+
+    &--red {
+        background-color: $color-primary;
+        border: 3px solid $color-primary;
+        color: $color-grey-light-1;
+
+        &:hover {
+            border: 3px solid $color-primary;
+            background-color: transparent;
+        }
+    }
+
+    &--yellow {
+        background-color: $color-tertiary;
+        border: 3px solid $color-tertiary;
+
+        &:hover {
+            border: 3px solid $color-tertiary;
+            background-color: transparent;
+        }
+    }
+
+    &--black-text {
+        color: $color-grey-dark-3;    
+    }
+
+    &--black-text-hover {
+        &:hover {
+            color: $color-grey-dark-3;
+        }
+    }
+
+    &--white-text-hover {
+        &:hover {
+            color: $color-grey-light-1;
+        }
+    }
+}

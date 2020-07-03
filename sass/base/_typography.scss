@@ -1,0 +1,99 @@
+html {
+    font-size: 62.5%;
+
+    @media(max-width: 1000px) {
+        font-size: 50%;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 43.75%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-light-1;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+%heading {
+    text-transform: uppercase;
+}
+
+.heading-1 {
+    font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: .8rem;
+    @extend %heading;
+
+    @media(max-width: 800px) {
+        font-size: 4.5rem;
+    }
+}
+
+.heading-2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    font-family: $font-display;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    @extend %heading;
+
+    @media(min-width: 800px) {
+        @include clipPathSlight;
+    }
+
+    &--red {
+        background-color: $color-primary;
+    }
+
+    &--yellow {
+        background-color: $color-tertiary;
+        color: $color-grey-dark-3;
+    }
+
+    &--white {
+        color: $color-grey-light-1;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.heading-3 {
+    font-size: 3rem;
+    font-family: $font-display;
+}
+
+.heading-4 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: $font-display;
+
+    &--yellow {
+        width: max-content;
+        padding: 0 1.5rem;
+        background-color: $color-tertiary;
+        @include clipPathSlight;
+    }
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    width: 90%;
+    margin: 0 auto;
+
+    &--italic {
+        font-style: italic;
+    }
+}
+
+.mb-sm { margin-bottom: 2rem; }
+.mb-md { margin-bottom: 4rem; }
+.mb-bg { margin-bottom: 8rem; }

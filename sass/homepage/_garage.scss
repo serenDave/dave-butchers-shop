@@ -1,0 +1,158 @@
+.garage {
+    &-info {
+        grid-row: 4 / 5;
+        grid-column: center-start / center-end;
+        padding: 8rem 0;
+        z-index: 10;
+        
+        @media(max-width: 600px) {
+            grid-column: full-start / full-end;
+            padding: 8rem 2rem;
+        }
+
+        &__text {
+            background-color: $darken-image;
+            border-radius: 5px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &__services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        &__service {
+            padding: 1rem;
+            background-color: $darken-image;
+            border-radius: 5px;
+            text-align: center;
+
+            &-icon {
+                width: 9rem;
+                height: 9rem;
+                margin: 2rem auto;
+                fill: $color-grey-light-1;
+            }
+
+            &-text {
+                color: $color-grey-light-1;
+                letter-spacing: 1px;
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+        }
+
+        &__button {
+            text-align: center;
+        }
+
+        &__background {
+            grid-row: 4 / 5;
+            grid-column: full-start / full-end;
+            z-index: -1;
+
+            background-image: linear-gradient($darken-image, $darken-image),
+                url(../img/garage-info.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &-reviews {
+        grid-column: center-start / center-end;
+        padding: 5rem 0;
+        color: $color-grey-dark-3;
+        margin-bottom: 5rem;
+
+        @media(max-width: 600px) {
+            grid-column: full-start / full-end;
+        }
+
+        &__reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+            grid-row-gap: 3rem;    
+            justify-items: center;
+            margin-bottom: 4rem;
+
+            @media(max-width: 400px) {
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            }
+        }
+
+        %box-shadow {
+            box-shadow: $box-shadow;
+        }
+
+        &__review {
+            padding: 2rem 3rem;
+            width: 90%;
+            @extend %box-shadow;
+            background-color: $color-grey-light-3;
+            transition: all .4s;
+
+            &:hover {
+                transform: scale(1.03);
+                background-color: $color-primary-light;
+            }
+        }
+    
+        &__text {
+            padding: 2rem 3rem;
+            background-color: #fff;
+            border-radius: 3px;
+            color: $color-grey-dark-1;
+            margin-bottom: 3rem;
+            position: relative;
+            @extend %box-shadow;
+            z-index: 1;
+
+            &::after {
+                display: block;
+                height: 3rem;
+                width: 3rem;
+                content: "";
+                position: absolute;
+                left: 4rem;
+                bottom: -1.5rem;
+                z-index: 5;
+                transform: rotate(45deg);
+                background-color: #fff;
+            }
+        }
+    
+        &__photo {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+    
+        &__author {
+            padding: 2rem 3rem;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            @extend %box-shadow;
+            border-radius: 3px;
+        }
+    
+        &__name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $color-secondary-light;
+        }
+    
+        &__bio {
+            color: $color-grey-light-2;
+            font-style: italic;
+        }
+
+        &__button {
+            text-align: center;
+        }
+    }
+}

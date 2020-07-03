@@ -1,0 +1,128 @@
+.restaurant {
+    &-info {
+        grid-row: 6 / 7;
+        grid-column: center-start / center-end;
+        color: $color-grey-dark-3;
+        z-index: 5;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+
+        @media(max-width: 600px) {
+            grid-column: full-start / full-end;
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        &__info-box {
+            padding: 6.5rem 2rem;
+            text-align: center;
+        }
+
+        &__dishes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            grid-gap: 5rem;
+            margin-bottom: 4rem;
+        }
+
+        &__background {
+            grid-row: 6 / 7;
+            grid-column: full-start / full-end;
+            background-color: #f9f7f6;
+            z-index: 1;
+        }
+
+        &__button {
+            text-align: center;
+        }
+    }
+
+    &-reviews {
+        grid-row: 7 / 8;
+        grid-column: center-start / center-end;
+        z-index: 10;
+        padding: 8rem 0;
+        color: $color-grey-dark-3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media(max-width: 650px) {
+            grid-column: full-start / full-end;
+        }
+
+        &__review {
+            width: 90%;
+            padding: 3rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 3px;
+            display: flex;
+            transition: all .3s;
+            
+            @media(min-width: 650px) {
+                transform: skewX(-12deg);
+                padding: 5rem;
+            }
+
+            &:hover {
+                @media(min-width: 650px) {
+                    transform: skewX(-12deg) translateY(-1rem);
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 7rem;
+            }
+
+            @media(max-width: 400px) {
+                flex-direction: column;
+            }
+        }
+
+        &__photo {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            margin-right: 3rem;
+
+            @media(min-width: 650px) {
+                transform: skewX(12deg);
+            }
+
+            @media(max-width: 400px) {
+                margin-right: 0;
+                margin-bottom: 3rem;
+            }
+        }
+
+        &__user-box {
+            @media(min-width: 650px) {
+                transform: skewX(12deg);
+            }
+        }
+
+        &__user-name {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: $font-display;
+            margin-bottom: 1rem;
+            width: max-content;
+            padding: 1rem;
+            background-color: $color-tertiary;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
+
+        &__background {
+            grid-row: 7 / 8;
+            grid-column: full-start / full-end;
+            z-index: -1;
+            background-image: linear-gradient($darken-image, $darken-image), 
+            url(../img/restaurant-reviews-1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

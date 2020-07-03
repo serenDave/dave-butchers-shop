@@ -1,0 +1,29 @@
+.header {
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+
+    background-image: linear-gradient(
+            $darken-image, $darken-image), url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    
+    &__hero {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        font-weight: 700;
+        letter-spacing: 1.5rem;
+
+        @media(max-width: 800px) {
+            font-size: 1.8rem;
+        }
+    }
+}
